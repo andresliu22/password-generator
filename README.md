@@ -1,6 +1,6 @@
 # Password Generator
 
-## Generate your own password using the criteria you like. It would let you choose the password's length as well as the type of characters that would be used to generate the password such as lowercased, uppercased, numeric and special characters.
+Generate your own password using the criteria you like. It would let you choose the password's length as well as the type of characters that would be used to generate the password such as lowercased, uppercased, numeric and special characters.
 
 ## Site Picture
 
