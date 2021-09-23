@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 // All variables that would be answered by the user
-var passLength = 0;
+var passLength = "";
 var lowercaseBool = false;
 var uppercaseBool = false;
 var numericBool = false;
@@ -14,6 +14,8 @@ var uppercaseSet = lowercaseSet.toUpperCase();
 var numericSet = "0123456789";
 var specialSet = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
+var validationSet = [...lowercaseSet, ...uppercaseSet, ...specialSet]
+
 // Write password to the #password input
 function writePassword() {
 
@@ -21,11 +23,11 @@ function writePassword() {
   resetPassword() 
 
   // Loop until user chooses a number between 8 to 128
-  while (passLength < 8 || passLength > 128 || isNaN(passLength)) {
-    passLength = parseInt(prompt("Choose a password between 8 to 128 characters:"));
+  while (passLength < 8 || passLength > 128 || isNaN(passLength) || passLength.includes(validationSet)){
+    passLength = prompt("Choose a password between 8 to 128 characters:");
 
     // If not pop an alert
-    if (passLength < 8 || passLength > 128 || isNaN(passLength)) {
+    if (passLength < 8 || passLength > 128 || isNaN(passLength) || passLength.includes(validationSet)) {
       alert("Please choose a number between 8 to 128");
     }
   }
@@ -83,7 +85,7 @@ function generatePassword() {
 
 // Function to reset all values
 function resetPassword() {
-  passLength = 0;
+  passLength = "";
   lowercaseBool = false;
   uppercaseBool = false;
   numericBool = false;
