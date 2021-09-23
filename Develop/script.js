@@ -18,7 +18,6 @@ var specialSet = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 function writePassword() {
 
 
-
   // Loop until user chooses a number between 8 to 128
   while (passLength < 8 || passLength > 128 || isNaN(passLength)) {
     passLength = parseInt(prompt("Choose a password between 8 to 128 characters:"));
@@ -49,6 +48,35 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
+}
+
+function generatePassword() {
+  
+  var newPassword = "";
+  var charSet = "";
+
+  // Concatenate strings for each confirmed set
+  if (lowercaseBool) {
+    charSet = charSet.concat(lowercaseSet);
+  }
+  if (uppercaseBool) {
+    charSet = charSet.concat(uppercaseSet);
+  }
+  if (numericBool) {
+    charSet = charSet.concat(numericSet);
+  }
+  if (specialBool) {
+    charSet = charSet.concat(specialSet);
+  }
+
+  // Loop to add to the new password any character that was confirmed
+  // until the length of the password entered is reached
+  for (var i = 0; i < passLength; i++) {
+    newPassword += charSet.charAt(Math.floor(Math.random() * charSet.length));
+  }
+
+  // Return new password
+  return newPassword;
 }
 
 
