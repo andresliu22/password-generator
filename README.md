@@ -1,92 +1,54 @@
-# 03 JavaScript: Password Generator
+# Password generator
 
-## Your Task
+## Generate your own password using the criteria you like. It would let you choose the password's length as well as the type of characters that would be used to generate the password such as lowercased, uppercased, numeric and special characters.
 
-This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+## Site Picture
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+![Site](./Assets/03-javascript-homework-demo)
 
-## User Story
+## Getting Started
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Acceptance Criteria
+* Click on the green button named Code on github and copy the URL of the repository
+* Use the command git clone (repository's URL) to clone all existing project on your local machine
+* Start your testing with your own clone of the repository using your preferred code editor
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+### Prerequisites
 
-## Mock-Up
+* Git
 
-The following image shows the web application's appearance and functionality:
+### Installing
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+* Fork the project to get your own copy of the repository
+* Clone the repository
+* Make your changes and testing
+* Deploy on github by going to the repository and on settings in the pages tab save the source to main for deployment and demo.
 
-## Grading Requirements
+## Built With
 
-This homework is graded based on the following criteria: 
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 
-### Technical Acceptance Criteria: 40%
+## Deployed Link
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+* [See Live Site](https://andresliu22.github.io/password-generator/)
 
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
+## Authors
 
-### Deployment: 32%
+* **Andres Liu** 
 
-* Application deployed at live URL.
+- [Link to Portfolio Site](https://andresliu22.github.io/portfolio/)
+- [Link to Github](https://github.com/andresliu22/)
+- [Link to LinkedIn](https://www.linkedin.com/in/andresliu22/)
 
-* Application loads with no errors.
+## License
 
-* Application GitHub URL submitted.
+This project is licensed under the MIT License 
 
-* GitHub repository that contains application code.
+## Acknowledgments
 
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+* Always do some research to get the best possible way to code anything
+* Make the website and code easy to read for viewers and other developers by using brief comments
+* Be use to commit to get an insight of what you have done for each progress you make
