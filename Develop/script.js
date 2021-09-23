@@ -17,6 +17,8 @@ var specialSet = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 // Write password to the #password input
 function writePassword() {
 
+  // Reset previous choices gotten from previous answers
+  resetPassword() 
 
   // Loop until user chooses a number between 8 to 128
   while (passLength < 8 || passLength > 128 || isNaN(passLength)) {
@@ -79,7 +81,14 @@ function generatePassword() {
   return newPassword;
 }
 
-
+// Function to reset all values
+function resetPassword() {
+  passLength = 0;
+  lowercaseBool = false;
+  uppercaseBool = false;
+  numericBool = false;
+  specialBool = false;
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
