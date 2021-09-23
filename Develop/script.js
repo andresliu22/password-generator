@@ -17,7 +17,7 @@ var specialSet = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 // Write password to the #password input
 function writePassword() {
 
-  // Reset previous choices gotten from previous answers
+  // Reset previous choices
   resetPassword() 
 
   // Loop until user chooses a number between 8 to 128
