@@ -14,11 +14,11 @@ These instructions will get you a copy of the project up and running on your loc
 * Use the command git clone (repository's URL) to clone all existing project on your local machine
 * Start your testing with your own clone of the repository using your preferred code editor
 
-### Prerequisites
+## Prerequisites
 
 * Git
 
-### Installing
+## Installing
 
 * Fork the project to get your own copy of the repository
 * Clone the repository
