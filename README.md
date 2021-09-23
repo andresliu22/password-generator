@@ -39,6 +39,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 * **Andres Liu** 
 
+## Contacts
+
 - [Link to Portfolio Site](https://andresliu22.github.io/portfolio/)
 - [Link to Github](https://github.com/andresliu22/)
 - [Link to LinkedIn](https://www.linkedin.com/in/andresliu22/)
